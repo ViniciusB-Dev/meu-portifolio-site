@@ -788,14 +788,19 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         10. Clients
 --------------------------------------*/
 .clients {padding-top: 50px;}
-.clients-area {
+.stacks-area {
     display: flex;
     align-items: center;
     height: 250px;
+    cursor: pointer;
 }
-.clients-area .item {padding: 0 25px;}
-
-.clients .clients-area .owl-carousel .owl-item img {
+.stacks-area .item {width: 22px;}
+.stacks-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.clients .stacks-area .owl-carousel .owl-item img {
     display: block;
     width: 100%;
     height: auto;

@@ -123,5 +123,18 @@ $(document).ready(function(){
             $(".header-text a").addClass("animated fadeInDown").css({'opacity':'0'});
         });
 
+
+	$(window).load(function(){
+		$(".header-stacks li").removeClass("animated fadeInUp").css({'opacity':'0'});
+
+		$(".header-stacks li").removeClass("animated fadeInDown").css({'opacity':'0'});
+	});
+
+	$(window).load(function(){
+		$(".header-stacks li").addClass("animated fadeInUp").css({'opacity':'0'});
+
+		$(".header-stacks li").addClass("animated fadeInDown").css({'opacity':'0'});
+	});
+
 });	
 	
