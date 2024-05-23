@@ -975,6 +975,37 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     100%  {bottom:7px;}
 
 }
+
+/* Estilos para a barra de rolagem */
+/* Estilos básicos para navegadores WebKit (Chrome, Safari) e Blink (Opera) */
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Cor de fundo da faixa */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Cor da alça */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+/* Cor da alça ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Estilos para navegadores baseados em Gecko (Firefox) */
+/* Largura da barra de rolagem */
+scrollbar-width: thin;
+scrollbar-color: #888 #f1f1f1;
+
+
+
 @media (min-width: 600px ){
     .stacks ul{
 
