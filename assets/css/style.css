@@ -254,30 +254,37 @@ nav.navbar.bootsnav .navbar-toggle i{color: #3e8810;;}
 
 /* Stacks linguagens quadrado em cima da foto*/
 .stacks {
-    width:  100%;
+
     font-weight: bold;
 }
 .stacks ul{
     display: flex;
     justify-content: center;
-    gap: 22px;
+    gap: 5px;
     padding-top: 50px;
 
 }
 
 .stacks ul li {
     background: #3e8810;
-    width: 150px;
+    width: 160px;
     padding: 20px;
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 8px;
     border-radius: 5px;
 }
 .stacks ul li img {
 
-    width: 20px;
+    width: 15px;
 
+}
+
+.stacks ul li p{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /*BOtao de contato abaixo*/
@@ -1006,11 +1013,11 @@ scrollbar-color: #888 #f1f1f1;
 
 
 
-@media (min-width: 600px ){
+@media (max-width: 400px ){
     .stacks ul{
 
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         gap: 10px;
     }
@@ -1030,6 +1037,8 @@ scrollbar-color: #888 #f1f1f1;
         width: 12px;
 
     }
+
+
 }
 
 @media (max-width: 764px ){
@@ -1052,7 +1061,6 @@ scrollbar-color: #888 #f1f1f1;
     }
     .stacks ul{
 
-        display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 10px;
@@ -1065,15 +1073,17 @@ scrollbar-color: #888 #f1f1f1;
         padding: 4px;
         background: #3e8810;
 
-        display: flex;
         justify-content: center;
 
     }
     .stacks img {
+        display: flex;
+        flex-direction: column;
 
-        width: 15px;
 
     }
+
+
     .single-about-txt p {
         padding-top: 10px;
         font-size: 16px;
