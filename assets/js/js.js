@@ -1,8 +1,14 @@
-
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("submitBtn").addEventListener("click", function(event) {
         event.preventDefault();
         const formData = new FormData(document.getElementById("discordForm"));
+
+        // Validar se algum campo está vazio
+        if (!formData.get("name") || !formData.get("email") || !formData.get("subject") || !formData.get("comment")) {
+            alert("Por favor, preencha todos os campos do formulário.");
+            return; // Encerrar a função se algum campo estiver vazio
+        }
+
         const params = {
             name: formData.get("name"),
             email: formData.get("email"),
@@ -23,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (!response.ok) {
                     throw new Error('Erro ao enviar mensagem para o Discord');
                 }
-                alert('Mensagem enviada com sucesso para o Discord!');
+                alert('Mensagem enviada com sucesso!');
                 document.getElementById("discordForm").reset(); // Limpar o formulário após o envio
             })
             .catch(error => {
